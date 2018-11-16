@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Card from './Card'
+import './card.css'
 
 
 class CardList extends Component {
     
-
 
     render() {
         const robots = this.props.robots
@@ -13,7 +13,7 @@ class CardList extends Component {
         })
 
         return (
-            <div>
+            <div className="grid-container">
                 {robotList}
             </div>
         );
